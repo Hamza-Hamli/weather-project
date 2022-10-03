@@ -12,7 +12,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #43AFFC;
+  /* background: #43AFFC; */
+  background: #074c7c;
 }
 
 ::selection{
@@ -200,7 +201,7 @@ header i{
 }
 
 .column i{
-  color: #5DBBFF;
+  color: #0061a7;
   font-size: 40px;
 }
 
