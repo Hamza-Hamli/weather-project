@@ -22,7 +22,7 @@ locationBtn.addEventListener("click", () =>{
 function requestApi(city){
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={cde3351e8c8957d723c9b16658983615
 }`;
-    fetchData(api).then(response => console.log(response.json()));
+    fetch(api).then(response => response.json()).then(result => weatherDetails(result));
 }
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
