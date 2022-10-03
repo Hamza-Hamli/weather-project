@@ -20,7 +20,7 @@ locationBtn.addEventListener("click", () =>{
     }
 });
 function requestApi(city){
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={cde3351e8c8957d723c9b16658983615
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid={cde3351e8c8957d723c9b16658983615
 }`;
     fetch(api).then(response => response.json()).then(result => weatherDetails(result));
 }
